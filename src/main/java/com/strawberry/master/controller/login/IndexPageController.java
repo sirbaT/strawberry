@@ -22,7 +22,7 @@ public class IndexPageController {
     @RequestMapping("/")
     @ResponseBody
     public String index() {
-        return "Greetings from Spring Boot!";
+        return "网站建设中";
         //return "root/index";
     }
 }
