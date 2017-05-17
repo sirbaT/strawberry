@@ -38,3 +38,6 @@ nbdist/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 >>>>>>> aebe0bc328571268ad0c42328f3008900115a96f
+
+# application properties
+application-prod.properties
