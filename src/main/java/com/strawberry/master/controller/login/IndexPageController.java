@@ -10,11 +10,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * on 2017/5/15.
  */
 @Controller
-@RequestMapping("/")
 public class IndexPageController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String IndexPage() {
+        return "root/index";
+    }
+
+    @RequestMapping("/")
+    public String index() {
+        // return "Greetings from Spring Boot!";
         return "root/index";
     }
 }
