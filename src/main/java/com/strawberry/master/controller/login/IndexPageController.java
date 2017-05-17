@@ -1,8 +1,10 @@
 package com.strawberry.master.controller.login;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 首页连接器
@@ -14,12 +16,13 @@ public class IndexPageController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String IndexPage() {
-        return "root/index";
+        return "index";
     }
 
     @RequestMapping("/")
+    @ResponseBody
     public String index() {
-        // return "Greetings from Spring Boot!";
-        return "root/index";
+        return "Greetings from Spring Boot!";
+        //return "root/index";
     }
 }
