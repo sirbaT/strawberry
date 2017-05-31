@@ -32,7 +32,9 @@ dependencies {
 	compile('com.aliyun:aliyun-java-sdk-ram:2.0.7')
 	compile('com.aliyun:aliyun-java-sdk-core:2.2.3')
 	compile('com.aliyun.oss:aliyun-sdk-oss:2.6.0')
-	compile 'org.springframework.boot:spring-boot-starter-data-mongodb:1.2.0.RELEASE'
+	/*compile 'org.springframework.boot:spring-boot-starter-data-mongodb:1.2.0.RELEASE'*/
 	runtime("mysql:mysql-connector-java")
+	compile("org.springframework.boot:spring-boot-devtools")
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

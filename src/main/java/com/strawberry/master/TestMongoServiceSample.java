@@ -1,7 +1,5 @@
 package com.strawberry.master;
 
-import com.mongodb.MongoClient;
-
 /**
  * 测试mongo客户端
  * Created by yaguang.wang
@@ -9,8 +7,8 @@ import com.mongodb.MongoClient;
  */
 public class TestMongoServiceSample {
     public static void main(String[] args) {
-        MongoClient m = new MongoClient("localhost", 27017);
+        //  MongoClient m = new MongoClient("localhost", 27017);
 
-        System.out.println(m.getDatabase(""));
+        //  System.out.println(m.getDatabase(""));
     }
 }
