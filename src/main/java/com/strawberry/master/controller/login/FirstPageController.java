@@ -1,7 +1,7 @@
 package com.strawberry.master.controller.login;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class FirstPageController {
 
     @RequestMapping(value = "/first", method = RequestMethod.GET)
-    public String firstPage(ModelMap model) {
+    public String firstPage(Model model) {
         model.addAttribute("name", "wyg");
         return "firstpage";
     }
